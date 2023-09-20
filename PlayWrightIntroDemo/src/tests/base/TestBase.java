@@ -1,4 +1,4 @@
-package testrunner.base;
+package tests.base;
 
 import org.junit.jupiter.api.*;
 
