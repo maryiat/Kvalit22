@@ -23,7 +23,8 @@ public class LoginTest extends TestBase {
 		//Locate elements
 		Locator usernameInput = page.getByPlaceholder("Username");
 		Locator passwordInput = page.getByPlaceholder("Password");
-		Locator loginButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in"));
+		Locator loginButton = page.getByRole(AriaRole.BUTTON, 
+				new Page.GetByRoleOptions().setName("Log in"));
 		Locator header = page.getByText("Dinesh's Pizza House");
 
 		//Interact with elements
@@ -34,6 +35,7 @@ public class LoginTest extends TestBase {
 		//Assert result
 		assertThat(header).isVisible();
 		
-		//Cleanup
 	}
 }
+
+
