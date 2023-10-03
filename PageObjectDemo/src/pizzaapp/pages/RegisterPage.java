@@ -12,7 +12,7 @@ public class RegisterPage {
 	private final Locator passwordInput;
 	private final Locator confirmPasswordInput;
 	private final Locator termsCheckbox;
-	private final Locator registerButton;
+	Locator registerButton;
 
 	public RegisterPage(Page page) {
 		this.firstNameInput = page.getByPlaceholder("First Name");
@@ -33,4 +33,6 @@ public class RegisterPage {
 		termsCheckbox.check();
 		registerButton.click();
 	}
+	
+	
 }

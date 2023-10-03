@@ -13,7 +13,7 @@ public class LoginTest extends TestBase {
 	void loginAsAdmin() {
 
 		LoginPage loginPage = new LoginPage(page);
-
+		
 		loginPage.openLoginPage();
 		loginPage.login("admin", "admin");
 
