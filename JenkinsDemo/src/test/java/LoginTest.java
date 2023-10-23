@@ -47,8 +47,13 @@ public class LoginTest extends TestBase {
 		assertTrue(true);
 	}
 
-		@Test
+	@Test
 	void passedTest() {
+		assertTrue(true);
+	}
+
+	@Test
+	void passedTestDouble() {
 		assertTrue(true);
 	}
 }
