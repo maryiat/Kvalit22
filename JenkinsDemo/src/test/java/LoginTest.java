@@ -1,6 +1,7 @@
 
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -39,7 +40,11 @@ public class LoginTest extends TestBase {
 		System.out.println("Assert that header is visible.");
 
 		assertThat(header).isVisible();
-		
+	}
+	
+	@Test
+	void failedTest() {
+		assertTrue(false);
 	}
 }
 
