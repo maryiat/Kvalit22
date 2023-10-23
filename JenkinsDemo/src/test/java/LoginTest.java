@@ -44,7 +44,7 @@ public class LoginTest extends TestBase {
 	
 	@Test
 	void failedTest() {
-		assertTrue(true);
+		assertTrue(false);
 	}
 
 	@Test
