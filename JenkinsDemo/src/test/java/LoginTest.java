@@ -15,10 +15,13 @@ public class LoginTest extends TestBase {
 		//Setup
 		
 		//Navigation
+		System.out.println("Opening automation camp page.");
 		String loginUrl = "https://play1.automationcamp.ir/login.html";
 		page.navigate(loginUrl);
 		
 		//Locate elements
+		System.out.println("Locating elements on automation camp page.");
+
 		Locator usernameInput = page.getByPlaceholder("Username");
 		Locator passwordInput = page.getByPlaceholder("Password");
 		Locator loginButton = page.getByRole(AriaRole.BUTTON, 
@@ -26,11 +29,15 @@ public class LoginTest extends TestBase {
 		Locator header = page.getByText("Dinesh's Pizza House");
 
 		//Interact with elements
+		System.out.println("Fill user name and password.");
+
 		usernameInput.fill("admin");
 		passwordInput.fill("admin");
 		loginButton.click();
 		
 		//Assert result
+		System.out.println("Assert that header is visible.");
+
 		assertThat(header).isVisible();
 		
 	}
